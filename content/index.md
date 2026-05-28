@@ -19,4 +19,4 @@ You can get started with some of those posts:
 I also share what's here for me as a creative art, like:
 - [[When grief comes to visit, offer her your best chair]]
 
-And check out my most recent posts here: [[all posts]]
+And check out my most recent posts here: [[All posts]]
