@@ -62,7 +62,7 @@ ul.tags li {
 
 ul.tags li a.internal.tag-link {
   font-size: 16px;
-  color: #9B8FE0 !important;
+    color: var(--tertiary) !important;
   text-decoration: none !important;
   background: none !important;
   border: none !important;
@@ -76,4 +76,34 @@ ul.tags li a.internal.tag-link::before {
 
 ul.tags li a.internal.tag-link:hover {
   color: var(--darkgray) !important;
+}
+
+:root[saved-theme="light"] {
+  --light: #ffffff;
+  --lightgray: #ede8f5;
+  --gray: #9b8bb4;
+  --darkgray: #4a3d6b;
+  --dark: #1e1133;
+  --secondary: #6b4fa0;
+  --tertiary: #9b6fd4;
+  --highlight: rgba(107, 79, 160, 0.08);
+}
+
+html[saved-theme="dark"] {
+  --light: #0f0f0f!important;
+  --lightgray: #1e1e1e!important;
+  --gray: #888888!important;
+  --darkgray: #e0e0e0!important;
+  --dark: #f0f0f0!important;
+  --secondary: #a78bda!important;
+  --tertiary: #c4a8f0!important;
+  --highlight: rgba(167, 139, 218, 0.12)!important;
+}
+
+.popover .back-button {
+  display: none;
+}
+
+.popover-inner {
+  border-radius: 16px !important;
 }
