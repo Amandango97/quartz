@@ -22,4 +22,4 @@ I'm not sure what happens if you get all the way there. On the bar of divine saf
 
 It's possible that what we call fear is actually existential terror. Like, when we're scared to speak up in a group, some part of us is actually saying 'I am afraid for my very existence right now'. And when we heal the existential terror, what's leftover may not even feel like fear anymore – it may feel like alertness, or aliveness, or exhilaration. I'm not sure.
 
-I do know that the more I feel, experience, and heal my existential fear, the more my being sighs out into a sense of fundamental safety – that even in circumstances that feel terrifying, some part of me trusts the world, knows that my true nature cannot die.
+I do know that the more I feel, experience, and heal my existential fear, the more my being sighs out into a sense of fundamental safety – that even in circumstances that feel terrifying, some part of me feels trust, okayness, and a resting in the knowing that my true nature cannot die.
