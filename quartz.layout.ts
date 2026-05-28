@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [
     Component.ConditionalRender({
       component: Component.PostList(),
-      condition: (page) => page.fileData.slug === "all-posts",
+      condition: (page) => page.fileData.slug === "All-posts",
     }),
   ],
   footer: Component.Footer({

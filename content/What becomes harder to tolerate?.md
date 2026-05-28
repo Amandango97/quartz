@@ -1,3 +1,7 @@
+---
+tags:
+  - healing
+---
 
 Last week, I was in a power tussle with one of my teachers. To complete my Barbara Brennan training, I needed to submit homework. My inner rebel was having absolutely none of it.
 
