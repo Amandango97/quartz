@@ -3,7 +3,7 @@ date: 2024-02-25
 ---
 I wrote this piece 6 months ago, before I went to a month-long retreat in the forest focused on intense emotional healing. The retreat spun me around and threw me on my head – it took a long time to digest and integrate to the point where I could come back to this post. Delightfully, I've realized that while I have a richer conception of trauma, emotional processing, and how to heal now, the building blocks are still very similar. So, here's my already-outdated-but-hopefully-still-useful write up of transformative psychological healing :)
 
-~~~
+~
 
 If you’ve talked to me in the last few months, I’ve probably given you my soapbox on Ideal Parent Figure therapy and attachment theory. I am a little bit obsessed. I’ve been fascinated by the themes underlying different therapy treatments for a while, and I’ve been astounded at how much it feels like attachment theory explains.
 
