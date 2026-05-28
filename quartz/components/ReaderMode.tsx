@@ -1,38 +1,226 @@
-// @ts-ignore
-import readerModeScript from "./scripts/readermode.inline"
-import styles from "./styles/readermode.scss"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { i18n } from "../i18n"
+import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 
-const ReaderMode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-  return (
-    <button class={classNames(displayClass, "readermode")}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        class="readerIcon"
-        fill="currentColor"
-        stroke="currentColor"
-        stroke-width="0.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        width="64px"
-        height="64px"
-        viewBox="0 0 24 24"
-        aria-label={i18n(cfg.locale).components.readerMode.title}
-      >
-        <title>{i18n(cfg.locale).components.readerMode.title}</title>
-        <g transform="translate(-1.8, -1.8) scale(1.15, 1.2)">
-          <path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z" />
-        </g>
-      </svg>
-    </button>
-  )
+const categoryColors: Record<string, string> = {
+  healing: "#E1F5EE",
+  autism: "#EEEDFE",
+  money: "#FAEEDA",
+  writing: "#FAECE7",
+  default: "#E5E5E5",
 }
 
-ReaderMode.beforeDOMLoaded = readerModeScript
-ReaderMode.css = styles
+export default (() => {
+  function PostList({ allFiles, displayClass }: QuartzComponentProps) {
+    const posts = allFiles
+      .filter((f) => f.slug !== "index" && !f.slug?.endsWith("/index"))
+      .sort((a, b) => {
+        const dateA = a.dates?.modified ?? a.dates?.created ?? new Date(0)
+        const dateB = b.dates?.modified ?? b.dates?.created ?? new Date(0)
+        return dateB.getTime() - dateA.getTime()
+      })
 
-export default (() => ReaderMode) satisfies QuartzComponentConstructor
+    const categories = Array.from(
+      new Set(posts.map((p) => (p.frontmatter?.category as string) ?? "uncategorized"))
+    )
+
+    return (
+      <div class={classNames(displayClass, "post-list-wrapper")}>
+        <div class="post-list-tabs">
+          <button class="tab-btn active" data-tab="recent">Most recent</button>
+          <button class="tab-btn" data-tab="category">By category</button>
+        </div>
+
+        <div class="post-list-panel" data-panel="recent">
+          {posts.map((post) => {
+            const category = (post.frontmatter?.category as string) ?? "default"
+            const color = categoryColors[category] ?? categoryColors.default
+            const excerpt = post.frontmatter?.excerpt as string
+            const cover = post.frontmatter?.cover as string
+            const date = post.dates?.modified ?? post.dates?.created
+            const dateStr = date ? new Date(date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : ""
+
+            return (
+              <a href={`/${post.slug}`} class="post-card">
+                <div class="post-card-image" style={`background-color: ${color}`}>
+                  {cover
+                    ? <img src={cover} alt={post.frontmatter?.title as string} />
+                    : <span class="post-card-initial">{(post.frontmatter?.title as string ?? "?")[0]}</span>
+                  }
+                </div>
+                <div class="post-card-body">
+                  <div class="post-card-meta">
+                    {dateStr && <span class="post-card-date">{dateStr}</span>}
+                    {category !== "default" && <span class="post-card-category">{category}</span>}
+                  </div>
+                  <div class="post-card-title">{post.frontmatter?.title as string ?? post.slug}</div>
+                  {excerpt && <div class="post-card-excerpt">{excerpt}</div>}
+                </div>
+              </a>
+            )
+          })}
+        </div>
+
+        <div class="post-list-panel hidden" data-panel="category">
+          {categories.map((cat) => (
+            <div class="category-group">
+              <h3 class="category-heading">{cat}</h3>
+              {posts
+                .filter((p) => ((p.frontmatter?.category as string) ?? "uncategorized") === cat)
+                .map((post) => {
+                  const color = categoryColors[cat] ?? categoryColors.default
+                  const excerpt = post.frontmatter?.excerpt as string
+                  const cover = post.frontmatter?.cover as string
+                  const date = post.dates?.modified ?? post.dates?.created
+                  const dateStr = date ? new Date(date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : ""
+
+                  return (
+                    <a href={`/${post.slug}`} class="post-card">
+                      <div class="post-card-image" style={`background-color: ${color}`}>
+                        {cover
+                          ? <img src={cover} alt={post.frontmatter?.title as string} />
+                          : <span class="post-card-initial">{(post.frontmatter?.title as string ?? "?")[0]}</span>
+                        }
+                      </div>
+                      <div class="post-card-body">
+                        <div class="post-card-meta">
+                          {dateStr && <span class="post-card-date">{dateStr}</span>}
+                        </div>
+                        <div class="post-card-title">{post.frontmatter?.title as string ?? post.slug}</div>
+                        {excerpt && <div class="post-card-excerpt">{excerpt}</div>}
+                      </div>
+                    </a>
+                  )
+                })}
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  PostList.css = `
+    .post-list-wrapper {
+      margin-top: 2rem;
+      border-top: 1px solid var(--lightgray);
+      padding-top: 1.5rem;
+    }
+    .post-list-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tab-btn {
+      background: none;
+      border: 1px solid var(--lightgray);
+      border-radius: 99px;
+      padding: 4px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--darkgray);
+      font-family: var(--bodyFont);
+    }
+    .tab-btn.active {
+      background: var(--dark);
+      color: var(--light);
+      border-color: var(--dark);
+    }
+    .post-list-panel.hidden {
+      display: none;
+    }
+    .post-card {
+      display: flex;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--lightgray);
+      text-decoration: none;
+      color: inherit;
+    }
+    .post-card:hover .post-card-title {
+      color: var(--secondary);
+    }
+    .post-card-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .post-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .post-card-initial {
+      font-size: 28px;
+      font-weight: 500;
+      opacity: 0.4;
+    }
+    .post-card-body {
+      flex: 1;
+      min-width: 0;
+    }
+    .post-card-meta {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .post-card-date {
+      font-size: 12px;
+      color: var(--gray);
+    }
+    .post-card-category {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 99px;
+      background: var(--lightgray);
+      color: var(--darkgray);
+      text-transform: capitalize;
+    }
+    .post-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .post-card-excerpt {
+      font-size: 13px;
+      color: var(--darkgray);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .category-group {
+      margin-bottom: 2rem;
+    }
+    .category-heading {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+  `
+
+  PostList.afterDOMLoaded = `
+    const tabs = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".post-list-panel");
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        panels.forEach(p => p.classList.add("hidden"));
+        tab.classList.add("active");
+        const target = tab.getAttribute("data-tab");
+        document.querySelector(".post-list-panel[data-panel='" + target + "']")?.classList.remove("hidden");
+      });
+    });
+  `
+
+  return PostList
+}) satisfies QuartzComponentConstructor

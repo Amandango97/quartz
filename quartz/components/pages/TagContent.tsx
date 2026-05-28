@@ -9,6 +9,8 @@ import { i18n } from "../../i18n"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 
+const placeholderColors = ["#EEEDFE", "#E8E4FB", "#F4C0D1", "#F5C4B3", "#E1F5EE"]
+
 interface TagContentOptions {
   sort?: SortFn
   numPages: number
@@ -42,6 +44,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
     ) as ComponentChildren
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = cssClasses.join(" ")
+
     if (tag === "/") {
       const tags = [
         ...new Set(
@@ -61,43 +64,24 @@ export default ((opts?: Partial<TagContentOptions>) => {
           <div>
             {tags.map((tag) => {
               const pages = tagItemMap.get(tag)!
-              const listProps = {
-                ...props,
-                allFiles: pages,
-              }
-
+              const listProps = { ...props, allFiles: pages }
               const contentPage = allFiles.filter((file) => file.slug === `tags/${tag}`).at(0)
-
               const root = contentPage?.htmlAst
               const content =
                 !root || root?.children.length === 0
                   ? contentPage?.description
                   : htmlToJsx(contentPage.filePath!, root)
-
               const tagListingPage = `/tags/${tag}` as FullSlug
               const href = resolveRelative(fileData.slug!, tagListingPage)
-
               return (
                 <div>
                   <h2>
-                    <a class="internal tag-link" href={href}>
-                      {tag}
-                    </a>
+                    <a class="internal tag-link" href={href}>{tag}</a>
                   </h2>
                   {content && <p>{content}</p>}
                   <div class="page-listing">
                     <p>
                       {i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
-                      {pages.length > options.numPages && (
-                        <>
-                          {" "}
-                          <span>
-                            {i18n(cfg.locale).pages.tagContent.showingFirst({
-                              count: options.numPages,
-                            })}
-                          </span>
-                        </>
-                      )}
                     </p>
                     <PageList limit={options.numPages} {...listProps} sort={options?.sort} />
                   </div>
@@ -109,25 +93,71 @@ export default ((opts?: Partial<TagContentOptions>) => {
       )
     } else {
       const pages = allPagesWithTag(tag)
-      const listProps = {
-        ...props,
-        allFiles: pages,
-      }
+        .sort((a, b) => {
+          const dateA = a.dates?.modified ?? a.dates?.created ?? new Date(0)
+          const dateB = b.dates?.modified ?? b.dates?.created ?? new Date(0)
+          return dateB.getTime() - dateA.getTime()
+        })
 
       return (
         <div class="popover-hint">
-          <article class={classes}>{content}</article>
-          <div class="page-listing">
-            <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
-            <div>
-              <PageList {...listProps} sort={options?.sort} />
-            </div>
+          <div class="post-list-wrapper">
+            {pages.map((post) => {
+              const title = post.frontmatter?.title as string ?? post.slug
+              const excerpt = post.frontmatter?.excerpt as string
+              const rawCover = post.frontmatter?.cover as string
+              const cover = rawCover ? rawCover.replace(/^\[\[|\]\]$/g, "") : null
+              const date = post.dates?.modified ?? post.dates?.created
+              const dateStr = date
+                ? new Date(date).toLocaleDateString("en-US", {
+                    month: "short", day: "numeric", year: "numeric",
+                  })
+                : ""
+              const rawTags = post.frontmatter?.tags
+              const tags: string[] = Array.isArray(rawTags)
+                ? rawTags
+                : typeof rawTags === "string"
+                ? [rawTags]
+                : []
+              const colorIndex = title.charCodeAt(0) % placeholderColors.length
+              const placeholderColor = placeholderColors[colorIndex]
+
+              return (
+                <a href={"/" + post.slug} class="post-card">
+                  <div class="post-card-image" style={"background-color: " + placeholderColor}>
+                    {cover
+  ? <img src={"/" + cover} alt={title} />
+  : <span class="post-card-initial">{title[0]}</span>
+}
+                  </div>
+                  <div class="post-card-content">
+                    <div class="post-card-title">{title}</div>
+                    {excerpt && <div class="post-card-excerpt">{excerpt}</div>}
+                    <div class="post-card-meta">
+                      {dateStr && <span class="post-card-date">{dateStr}</span>}
+                      {tags.length > 0 && <span class="post-card-sep">·</span>}
+                      {tags.map((t) => (
+                        <span class="post-card-tag">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              )
+            })}
           </div>
         </div>
       )
     }
   }
 
-  TagContent.css = concatenateResources(style, PageList.css)
+  TagContent.css = concatenateResources(style, `
+    .tag-page-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-transform: capitalize;
+    }
+  `)
+
   return TagContent
 }) satisfies QuartzComponentConstructor
