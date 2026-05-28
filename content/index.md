@@ -5,18 +5,14 @@ category:
 
 Hi, welcome.
 
-This is a space where I share what is here, and alive, for me.
+I am an endless stream of ideas. They are too complex to write in linear posts – they interweave, relate to each other, form coherent wholes.
 
-Start with reading about why this, and how I approach writing: [[Writing as expression]].
+This is a way for me to create a living organism of my writing, a format that can hopefully track the complexity of what is true.
 
-Much of my writing centers around consciousness, healing, emotional work, and my experiences around that.
+I write a lot about the healing process. For example, [[Four Pathways to Healing – Self, Imagined Other, Manifest Other, and the Divine]].
 
-You can get started with some of those posts:
-- An early framework for how we unwind trauma & update beliefs: [[An Algorithm for Psychological Healing]]
-- Different ways that we can heal parts: [[Four Pathways to Healing – Self, Imagined Other, Manifest Other, and the Divine]]
-- What it's like to be in touch with the divine: [[Touching Divinity]]
+I also share my experiences as a healer, like [[Money as central channel alignment]].
 
-I also share what's here for me as a creative art, like:
-- [[When grief comes to visit, offer her your best chair]]
+And sometimes just channel creative expression as a way to be in touch with beauty, emotions, and what is alive, like [[When grief comes to visit, offer her your best chair]].
 
-And check out my most recent posts here: [[All posts]]
+You can see my most recent posts here: [[All posts]]

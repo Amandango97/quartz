@@ -2,7 +2,7 @@
 excerpt: Recently, someone asked me what ‘mystical’ meant to me. It was a fascinating space to articulate what had felt only intuitive before.
 title: The mystical through the ages
 tags: healing
-cover:
+cover: images/mystical.png
 ---
 
 Recently, someone asked me what ‘mystical’ meant to me. It was a fascinating space to articulate what had felt only intuitive before.

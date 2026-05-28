@@ -10,6 +10,10 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.PostList(),
       condition: (page) => page.fileData.slug === "All-posts",
     }),
+    Component.ConditionalRender({
+    component: Component.LinkedPosts(),
+    condition: (page) => page.fileData.slug !== "All-posts" && page.fileData.slug !== "index",
+  }),
   ],
   footer: Component.Footer({
     links: {},

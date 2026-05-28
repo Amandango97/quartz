@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import PostList from "./PostList"
 import SidebarPostList from "./SidebarPostList"
 import BackButton from "./BackButton"
+import LinkedPosts from "./LinkedPosts"
 
 
 export {
@@ -57,5 +58,6 @@ export {
   PostList,
   SidebarPostList,
   BackButton,
+  LinkedPosts,
 }
 
