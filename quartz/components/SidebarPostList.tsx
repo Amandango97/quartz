@@ -18,7 +18,7 @@ export default (() => {
       <div class={classNames(displayClass, "spl-wrapper")}>
         <div class="spl-tag-list">
           <a href="/" class="spl-tag-item">Start here</a>
-          <a href="/All-posts" class="spl-tag-item">All posts</a>
+          <a href="/all-posts" class="spl-tag-item">All posts</a>
         </div>
         <div class="spl-divider"></div>
         <div class="spl-section-label">Tags</div>

@@ -6,7 +6,7 @@ const placeholderColors = ["#EEEDFE", "#E8E4FB", "#F4C0D1", "#F5C4B3", "#E1F5EE"
 export default (() => {
   function PostList({ allFiles, displayClass }: QuartzComponentProps) {
     const posts = allFiles
-        .filter((f) => f.slug !== "index" && f.slug !== "All-posts" &&!f.slug?.endsWith("/index"))
+        .filter((f) => f.slug !== "index" && f.slug !== "all-posts" &&!f.slug?.endsWith("/index"))
         .sort((a, b) => {
             const aPinned = a.frontmatter?.pinned === true || a.frontmatter?.pinned === "true"
             const bPinned = b.frontmatter?.pinned === true || b.frontmatter?.pinned === "true"
