@@ -20,7 +20,5 @@ The thing with the rigid is that you focus on the forms rather than the essence.
 
 You can see the symptoms of outside in, of focus on forms over essence, of the rigid, in so many places.
 
-### Frameworks
-
-
+At some point I will write more about them. There's discipline (the internal aligned will, vs the externally imposed self-beating), conceptual frameworks (internal structure that arises to offer bones to an idea, vs externally imposed analysis that restricts the scope of what the idea can be), beauty (the internal tenderness of beauty radiating out, vs externally imposed standards of what is 'objectively' beautiful), and a lot more.
 
