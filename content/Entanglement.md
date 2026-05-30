@@ -14,6 +14,4 @@ It is the feeling that there is something we are creating together that none of 
 
 I have a lover I am entangled with. Our processes are becoming one – there is no longer my process, and yours, there is only a mutual process, a greater whole we are two expressions of. Something begins to appear through me, and it is a reflection of something that is appearing in him. In the material world, it is delightful how closely it tracks. I start to have an experience with mold and physical illness, and he does too. I open a new view into how I relate to home, and it is a refraction of a process he is unwinding. We are weaving a shared organism.
 
-When I work with clients, they will all go through the same thing at once. I am part of the web of the healers I work with, and those who work with me are part of my web. There will be arcs – everyone is processing their fear of feeling their fear; everyone is moving through some kind of birth. There is a coherent whole rippling through the threads we weave.
-
-It is such a delicious joy to feel interwoven with humanity.
+It is such a delicious joy to be interwoven with humanity.
