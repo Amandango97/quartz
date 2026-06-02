@@ -1,6 +1,6 @@
 ---
 excerpt: I am becoming increasingly entangled.
-cov: images/impact.png
+cover: images/impact.png
 tags:
   - love
 ---
