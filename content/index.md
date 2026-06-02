@@ -15,6 +15,8 @@ I know that we can feel the underlying energy behind people's writing. And under
 
 This is a space for me to share: Hi, it's me. This is what I want to say. This is what feels interesting, exciting, joyful, confusing, to me.
 
+I'm glad you're here.
+
 -----
 
 I write a lot about the journey to refinding my wholeness, like:
