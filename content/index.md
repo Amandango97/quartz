@@ -19,6 +19,9 @@ I'm glad you're here.
 
 -----
 
+
+
+
 I write a lot about the journey to refinding my wholeness, like:
 - [[Four Pathways to Healing – Self, Imagined Other, Manifest Other, and the Divine]]
 - [[Touching Divinity]]

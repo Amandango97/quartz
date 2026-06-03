@@ -1,6 +1,6 @@
 ---
 excerpt: The deeper I go into the mysteries, the harder it is to talk about them.
-date: 0025-12-03
+date: 2025-12-03
 cover: images/pearl_attunement.png
 ---
 The deeper I go into the mysteries, the harder it is to talk about them. They are sacred, like pearls, the careful shells around them opening up only under warm, slow, gentle hands. They cannot be used for any purpose that is not pure, cannot be shared except from a place of heart unfolding. They move at their own pace.

@@ -1,7 +1,7 @@
 ---
 date: 2026-05-23
 excerpt: There is a natural, organic structure in reality. When we listen to that, we touch the essence of the thing.
-cover: images/inside out.png
+cover: images/inside_out.png
 ---
 
 *There is a natural, organic structure in reality. When we listen to that, we touch the essence of the thing.*

@@ -1,5 +1,5 @@
 ---
-excerpt: I am becoming increasingly entangled.
+excerpt: Someone once told me that the definition of beauty is that when we find it, we want to share it. I am sure that somewhere, there is an addendum for the sacred – when we touch it, we find we cannot possibly capture it in words, and we try and try, and it is like painting the sun with your fingers on a cave wall.
 cover: images/entangled.png
 tags:
   - love

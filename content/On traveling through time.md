@@ -1,5 +1,5 @@
 ---
-date: 0025-03-02
+date: 2025-03-02
 excerpt: There is a place where time stops, or rather, does not exist. Expansiveness stretches out. Every inch of space becomes impossibly dense and yet completely empty.
 cover: images/time_travel.png
 ---
