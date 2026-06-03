@@ -3,6 +3,7 @@ excerpt: I miss you, all the time. It’s okay, it’s a sweet ache – like my 
 cover: images/grief.png
 tags:
   - poetry
+substack: https://amandango.substack.com/p/when-grief-comes-to-visit-offer-her
 ---
 I miss you, all the time. It’s okay, it’s a sweet ache – like my love for you floats through my cells, reminding me that you were here.
 
