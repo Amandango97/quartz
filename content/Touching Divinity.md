@@ -1,7 +1,7 @@
 ---
 tags:
   - healing
-cover: images/touching-divinity.png
+cover: images/touching_divinity.png
 excerpt: |-
   We awaken through our cells.
 

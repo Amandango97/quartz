@@ -3,7 +3,7 @@ tags:
   - healing
 excerpt: Healing happens where there is a _meeting_. To truly unburden and release the pain our parts have been carrying, they must be met, received, and witnessed.
 date: 2025-06-09
-cover: images/four pathways.png
+cover: images/four_pathways.png
 ---
 
 Healing happens where there is a _meeting_. To truly unburden and release the pain our parts have been carrying, they must be met, received, and witnessed.
