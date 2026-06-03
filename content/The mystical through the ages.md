@@ -3,6 +3,7 @@ excerpt: Recently, someone asked me what ‘mystical’ meant to me. It was a fa
 title: The mystical through the ages
 tags: healing
 cover: images/mystical.png
+date: 2025-10-02
 ---
 
 Recently, someone asked me what ‘mystical’ meant to me. It was a fascinating space to articulate what had felt only intuitive before.
@@ -15,17 +16,13 @@ It feels as if I have stepped into a fantasy novel. Every day I am discovering a
 
 ### The mystical speaks to us in the language we can hear
 
+I am extremely uncertain about everything that follows. I wouldn't be surprised if in a month or two, I disagreed with this entirely. But there's some kind of shape here, something I am gesturing at, that feels real and interesting and worth putting into words.
+
 Integral theory talks about the different stages that humanity’s evolution has gone through.
 
-[
+![[altitudes_of_development.jpg]]
 
-![](https://substackcdn.com/image/fetch/$s_!VWHY!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5eeee9c2-6056-46a0-9916-876334e6d843_1536x2048.jpeg)
-
-
-
-](https://substackcdn.com/image/fetch/$s_!VWHY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5eeee9c2-6056-46a0-9916-876334e6d843_1536x2048.jpeg)
-
-At magenta, we lived as shaman. All of reality spoke to us – the trees, the caterpillars, and the wind. We swam in the waters of meaning, each layer folding in upon itself. At red, we became warriors: dominance, power, and protection drove our experience. At amber, we became the priestesses, the knights, and the lawmakers. Divine structure prevailed.
+At magenta, we lived as the shaman. All of reality spoke to us – the trees, the caterpillars, and the wind. We swam in the waters of meaning, each layer folding in upon itself. At red, we became warriors: dominance, power, and protection drove our experience. At amber, we became the priestesses, the knights, and the lawmakers. Divine structure prevailed.
 
 Somehow, in these phases, superstition was woven into the delivery mechanism for the mystical. There were forces outside of our control, both light and dark, and dancing to the gods in the field was important, necessary – the way to be in communion and keep ourselves safe.
 
@@ -33,7 +30,7 @@ I think back to the witch trials and the world of paganism. Life was dark, hard 
 
 Our access to the mystical evolved alongside our stages. The god of the old testament was tribal, powerful, righteously vengeful – the gift of red. Engaging with such a god required sacrifices, loyalty, and proof of commitment. You didn’t fuck with God.
 
-At amber, the mystical became about conformity. Follow the rules, and you will reap the rewards. It is not that any of this isn’t _true_ – there is a heaven realm, the Kingdom of God, and it is exquisite. And yes, it is harder to access if you have murdered someone, because your energy field becomes clouded. It’s just that this truth was delivered in the language we could hear at the time.
+At amber, the mystical became about conformity. Follow the rules, and you will reap the rewards. It is not that any of this isn’t _true_ – there is a heaven realm, the Kingdom of God, and it is exquisite. And yes, it is harder to access if you hurt people, because your energy field becomes clouded. It’s just that this truth was delivered in the language we could hear at the time.
 
 At orange, things shifted even more. Have we had access to the mystical through orange and green? Perhaps. We’ve worshipped the gods of prosperity and abundance. We’ve followed the lore of manifesting. We’ve reclaimed the wisdom of the group with a new understanding of the individual.
 

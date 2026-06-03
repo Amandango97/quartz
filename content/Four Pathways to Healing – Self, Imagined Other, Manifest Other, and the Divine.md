@@ -3,6 +3,7 @@ tags:
   - healing
 excerpt: Healing happens where there is a _meeting_. To truly unburden and release the pain our parts have been carrying, they must be met, received, and witnessed.
 date: 2025-06-09
+cover: images/four pathways.png
 ---
 
 Healing happens where there is a _meeting_. To truly unburden and release the pain our parts have been carrying, they must be met, received, and witnessed.
@@ -11,13 +12,7 @@ What I’ve observed from my forays into many different modalities is that there
 
 There are so many nuances that are hard to capture, but this is an attempt. I want to speak to the three foundational levels of meeting (**adult self**, **imagined other**, and **manifest other**), and how everything converges to the **divine**.
 
-[
-
-![](https://substackcdn.com/image/fetch/$s_!c3Dr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8619e157-611a-4450-be1b-6f83e2754076_1491x1461.png)
-
-
-
-](https://substackcdn.com/image/fetch/$s_!c3Dr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8619e157-611a-4450-be1b-6f83e2754076_1491x1461.png)
+![[pathways to healing.png]]
 
 ### The three foundational levels
 

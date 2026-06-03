@@ -7,6 +7,7 @@ tags:
   - writing
 pinned:
 cover: images/writing.png
+date: 2026-05-22
 ---
 I have been writing for so much of my life. Sharing my writing with the world, on the other hand, has been such a fraught journey.
 

@@ -1,5 +1,7 @@
 ---
 date: 2024-02-25
+cover: images/algorithm.png
+excerpt: I wanted to try and put all my amorphous soapbox thoughts on paper and share them here. This is partly a love letter to IPF therapy, and partly sketches of my current working model of effective psychotherapy.
 ---
 I wrote this piece 6 months ago, before I went to a month-long retreat in the forest focused on intense emotional healing. The retreat spun me around and threw me on my head – it took a long time to digest and integrate to the point where I could come back to this post. Delightfully, I've realized that while I have a richer conception of trauma, emotional processing, and how to heal now, the building blocks are still very similar. So, here's my already-outdated-but-hopefully-still-useful write up of transformative psychological healing :)
 
