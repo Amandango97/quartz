@@ -28,7 +28,6 @@ import SidebarPostList from "./SidebarPostList"
 import BackButton from "./BackButton"
 import LinkedPosts from "./LinkedPosts"
 
-
 export {
   ArticleTitle,
   Content,
@@ -59,5 +58,6 @@ export {
   SidebarPostList,
   BackButton,
   LinkedPosts,
+
 }
 

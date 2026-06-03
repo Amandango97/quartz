@@ -73,7 +73,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-      Component.SidebarPostList(),
+    Component.SidebarPostList(),
   ],
   right: [],
 }

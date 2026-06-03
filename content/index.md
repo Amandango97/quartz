@@ -19,8 +19,7 @@ I'm glad you're here.
 
 -----
 
-
-
+## Things I write about
 
 I write a lot about the journey to refinding my wholeness, like:
 - [[Four Pathways to Healing – Self, Imagined Other, Manifest Other, and the Divine]]
@@ -30,3 +29,9 @@ And I share my experience of being alive, like:
 - [[When grief comes to visit, offer her your best chair]]
 
 You can see my most recent posts here: [[All posts]]
+
+---
+
+## Stay up to date
+
+I'm trying out a system where if you sign up, I email you every so often with batches of posts. So, if you sign up, you won't receive notifications every time I publish a piece, but every few weeks or so, you'll receive an email with a handful of posts. Sign up below :)
