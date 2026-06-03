@@ -27,6 +27,7 @@ import PostList from "./PostList"
 import SidebarPostList from "./SidebarPostList"
 import BackButton from "./BackButton"
 import LinkedPosts from "./LinkedPosts"
+import SubstackLink from "./SubstackLink"
 
 export {
   ArticleTitle,
@@ -58,6 +59,6 @@ export {
   SidebarPostList,
   BackButton,
   LinkedPosts,
-
+  SubstackLink,
 }
 

@@ -14,6 +14,7 @@ export const sharedPageComponents: SharedLayout = {
     component: Component.LinkedPosts(),
     condition: (page) => page.fileData.slug !== "All-posts" && page.fileData.slug !== "index",
   }),
+    Component.SubstackLink(undefined),
   ],
   footer: Component.Footer({
     links: {},
