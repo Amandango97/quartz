@@ -3,11 +3,21 @@ import { classNames } from "../util/lang"
 
 const placeholderColors = ["#EEEDFE", "#E8E4FB", "#F4C0D1", "#F5C4B3", "#E1F5EE"]
 
-export default (() => {
+interface Options {
+  folder?: string
+  label?: string
+}
+
+export default ((opts?: Options) => {
   function PostList({ allFiles, displayClass }: QuartzComponentProps) {
     const posts = allFiles
-        .filter((f) => f.slug !== "index" && f.slug !== "All-posts" &&!f.slug?.endsWith("/index"))
-        .sort((a, b) => {
+      .filter(
+        (f) =>
+          f.slug !== "index" &&
+          !f.slug?.endsWith("/index") &&
+          (!opts?.folder || f.slug?.startsWith(opts.folder + "/")),
+      )
+      .sort((a, b) => {
             const aPinned = a.frontmatter?.pinned === true || a.frontmatter?.pinned === "true"
             const bPinned = b.frontmatter?.pinned === true || b.frontmatter?.pinned === "true"
             if (aPinned && !bPinned) return -1
@@ -82,7 +92,7 @@ export default (() => {
         </div>
         )}
         <div class="post-list-section">
-        <div class="post-list-section-label">All posts</div>
+        <div class="post-list-section-label">{opts?.label ?? "All posts"}</div>
         {unpinnedPosts.map(renderPost)}
         </div>
     </div>

@@ -6,11 +6,13 @@ export default (() => {
   function SidebarPostList({ allFiles, displayClass }: QuartzComponentProps) {
     const allTags = Array.from(
       new Set(
-        allFiles.flatMap((p) => {
-          const raw = p.frontmatter?.tags
-          const tags = Array.isArray(raw) ? raw : typeof raw === "string" ? [raw] : []
-          return tags.flatMap(getAllSegmentPrefixes)
-        })
+        allFiles
+          .filter((p) => p.slug?.startsWith("writing/"))
+          .flatMap((p) => {
+            const raw = p.frontmatter?.tags
+            const tags = Array.isArray(raw) ? raw : typeof raw === "string" ? [raw] : []
+            return tags.flatMap(getAllSegmentPrefixes)
+          })
       )
     ).sort()
 
@@ -26,6 +28,10 @@ export default (() => {
           {allTags.map((tag) => (
             <a href={"/tags/" + tag} class="spl-tag-item">{tag}</a>
           ))}
+        </div>
+        <div class="spl-divider"></div>
+        <div class="spl-tag-list">
+          <a href="/Visual-art" class="spl-tag-item">Visual art</a>
         </div>
       </div>
     )

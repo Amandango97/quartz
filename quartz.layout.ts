@@ -7,13 +7,20 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Component.ConditionalRender({
-      component: Component.PostList(),
+      component: Component.PostList({ folder: "writing", label: "All posts" }),
       condition: (page) => page.fileData.slug === "All-posts",
     }),
     Component.ConditionalRender({
-    component: Component.LinkedPosts(),
-    condition: (page) => page.fileData.slug !== "All-posts" && page.fileData.slug !== "index",
-  }),
+      component: Component.PostList({ folder: "visual", label: "Visual art" }),
+      condition: (page) => page.fileData.slug === "Visual-art",
+    }),
+    Component.ConditionalRender({
+      component: Component.LinkedPosts(),
+      condition: (page) =>
+        page.fileData.slug !== "All-posts" &&
+        page.fileData.slug !== "Visual-art" &&
+        page.fileData.slug !== "index",
+    }),
     Component.SubstackLink(undefined),
   ],
   footer: Component.Footer({
