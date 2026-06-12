@@ -1,5 +1,7 @@
 ---
-cover:
+cover: images/enjoy_the_process.png
+excerpt: I have, recently, been sitting with the utter preciousness of the journey to reclaim wholeness.
+date: 2026-06-11
 ---
 I have, recently, been sitting with the utter preciousness of the journey to reclaim wholeness.
 
