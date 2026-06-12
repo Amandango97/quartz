@@ -26,3 +26,6 @@ date: 2026-06-12
 	* One experience of feeling my terror: my healer was holding my hand and sitting in deep loving presence, and I was hyperventilating and annihilating him with my glares. And he kept saying something along the lines of, just let yourself feel it. And I was like, I don't think you understand that I actually am about to die buddy. But I had so much trust in him, from many interactions, and could feel beyond the immediate experience that even though my body was screaming at me that it wouldn't be okay to let my terror out, that it would probably be okay to let my terror out. So I did, and it was such a relief, and some part of me incarnated more deeply onto this planet.
 	* Another relevant note: I have also been in situations where I thought I should trust my healer, and I didn't actually. You probably know what trust actually feels like. If you're doubting it on a meta level, beyond the immediate experience level that will always feel afraid of letting that emotion out for the first time, you may just not trust that person.
 * When we're in loving presence, our emotions and energy naturally liberate on their own. There's nothing we need to do. We just sit there, in loving presence. Our energy knows how to liberate itself.
+
+**Related posts:**
+- [[What becomes harder to tolerate?]]
