@@ -4,6 +4,7 @@ cover: images/entangled.png
 tags:
   - love
 substack: https://amandango.substack.com/p/i-want-you-to-impact-me
+date: 2026-06-03
 ---
 Someone once told me that the definition of beauty is that when we find it, we want to share it. I am sure that somewhere, there is an addendum for the sacred – when we touch it, we find we cannot possibly capture it in words, and we try and try, and it is like painting the sun with your fingers on a cave wall. That is how I feel about this piece. But I have to try to express it anyway.
 

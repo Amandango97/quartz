@@ -1,3 +1,6 @@
+---
+date: 2026-06-12
+---
 
 A repository of posts that touch on specific healing skills. It'll grow as I write more.
 

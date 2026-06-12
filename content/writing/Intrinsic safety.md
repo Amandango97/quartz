@@ -3,6 +3,7 @@ tags:
   - healing
 excerpt: I have this vivid image of my teacher, Karl, standing in front of our Brennan energy class emanating a field of love as one of my classmates punched towards him.
 cover: images/safety.png
+date: 2026-05-28
 ---
 I have this vivid image of my teacher, Karl, standing in front of our Brennan energy class emanating a field of love as one of my classmates punched towards him.
 

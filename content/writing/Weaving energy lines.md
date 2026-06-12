@@ -8,6 +8,7 @@ excerpt: |-
   There's something interesting happening in me around weaving energy.
 
   Sometimes, increasingly, when I work with people energetically, what I feel is happening is a re-weaving of lines of energy.
+date: 2026-05-19
 ---
 
 There's something interesting happening in me around weaving energy.

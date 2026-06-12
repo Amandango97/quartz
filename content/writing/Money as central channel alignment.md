@@ -2,6 +2,7 @@
 excerpt: Healing in a paid container is a strange, strange thing. In an ideal world, we'd all live in a village, and your healing would come from your friends, community, elders.
 tags: healing
 cover: images/healing_money.png
+date: 2026-05-29
 ---
 Healing in a paid container is a strange, strange thing. In an ideal world, we'd all live in a village, and your healing would come from your friends, community, elders. Maybe there would be a few village healers. You'd show up at their door when you need it. There would be tea, sunlight, and time. It would take as long as it takes. Maybe you would visit once or twice in your life, maybe every week. You may show up and find a process already taking place, that you were meant to be part of.
 

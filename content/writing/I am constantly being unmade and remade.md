@@ -3,6 +3,7 @@ tags:
   - healing
 cover: images/caterpillar.png
 excerpt: I am constantly being unmade and remade. I have lost count of the number of times I have descended into some new layer of discomfort
+date: 2026-05-30
 ---
 I am constantly being unmade and remade. I have lost count of the number of times I have descended into some new layer of discomfort, then bemoaned the idea that I had everything together just a moment ago, and now it's all falling apart, and what could have possibly caused this?
 

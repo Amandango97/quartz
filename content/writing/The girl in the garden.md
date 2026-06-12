@@ -3,6 +3,7 @@ excerpt: Questions make her freeze. She speaks a different language, the languag
 tags:
   - autism
 cover: images/garden.png
+date: 2026-05-19
 ---
 Questions make her freeze. She speaks a different language, the language of energy, and she speaks it fluently, but translating is so hard. Her favorite thing to do is sit in the sunshine. She doesn’t need to do anything. When people are safe, she really really likes them. She is so pure. It feels like she is not made for this world. This world is so complex, loud, noisy, and she is so pure, simple, quiet. 
 
