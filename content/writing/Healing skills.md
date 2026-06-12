@@ -1,5 +1,8 @@
 ---
 date: 2026-06-12
+cover: images/healing_skills.png
+excerpt: A repository of posts that touch on specific healing skills.
+category: healing-skills
 ---
 
 A repository of posts that touch on specific healing skills. It'll grow as I write more.
