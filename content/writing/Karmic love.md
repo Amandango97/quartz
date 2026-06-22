@@ -2,6 +2,7 @@
 date: 2026-04-06
 excerpt: In the last two weeks, inside a container that contained the universe and timeless timelines, I fell in love.
 cover: images/karmic_love.png
+draft: true
 ---
 In the last two weeks, inside a container that contained the universe and timeless timelines, I fell in love.
 
