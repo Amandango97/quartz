@@ -20,10 +20,15 @@ I'm glad you're here.
 -----
 
 I write a lot about the journey to refinding my wholeness, like:
+- [[Coregulation]]
+- [[Birth, death, and the way of the warrior]]
 - [[Four Pathways to Healing – Self, Imagined Other, Manifest Other, and the Divine]]
-- [[Touching Divinity]]
 
-And I share my experience of being alive, like:
+And friendship, love, and grief, and life:
+- [[I want you to impact me]]
+- [[When everyone sees]]
 - [[When grief comes to visit, offer her your best chair]]
 
-You can see my most recent posts here: [[All posts]]
+I also share visual art: [[Visual art]]
+
+And check out all of my posts here: [[All posts]]
