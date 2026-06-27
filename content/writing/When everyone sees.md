@@ -1,7 +1,7 @@
 ---
 date: 2026-06-27
 excerpt: I feel a bit embarrassed to write about this stuff, because it feels like just being like 'wow I love my friends' but my god, I love my friends.
-cover: sees.png
+cover: images/sees.png
 category: love
 ---
 I feel a bit embarrassed to write about this stuff, because it feels like just being like 'wow I love my friends' but my god, I love my friends.
